@@ -3,15 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokemón</title>
+	<style>
+		body {
+			background-image: url(pikachu.jpg);
+		}
+		img {
+		    display: block;
+		    margin: auto;
+		}
+	</style>
 </head>
 <body>
 	<div>
 	<img src="pokemon.png" alt="Pokemon">
 	</div>
+	<div align="center">
 	<select id="seleccion1">
 		<option value="">Pokemón 1</option>
-		<option value="Pikachu">Pikachu</option>
-		<option value="Charmander">Charmander</option>
+		<option class="pikachu" value="Pikachu"></option>
+		<option class="charmander" value="Charmander"></option>
 		<option value="Diglet">Diglet</option>
 		<option value="Snorlax">Snorlax</option>
 		<option value="Jynx">Jynx</option>
@@ -21,14 +31,20 @@
 
 	<select id="seleccion2">
 		<option value="">Pokemón 2</option>
-		<option value="Pikachu">Pikachu</option>
-		<option value="Charmander">Charmander</option>
+		<option class="pikachu" value="Pikachu"></option>
+		<option class="charmander"></option>
 		<option value="Diglet">Diglet</option>
 		<option value="Snorlax">Snorlax</option>
 		<option value="Jynx">Jynx</option>
 	</select>
+	</div>
+	<div>
+		<p id="texto"></p>
+	</div>
 	<script src="assets/javascript.js"></script>
 </body>
 </html>
+
+
 
 
