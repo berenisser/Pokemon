@@ -17,4 +17,11 @@ function Pokemon(nombre, color, poderDeAtaque){
 	}
 }
 
-const Pikachu = new Pokemon("Pikachu","amarillo");
+const Pikachu = new Pokemon("Pikachu","amarillo",50);
+const Charmander = new Pokemon("Charmander","rojo",40);
+const Diglet = new Pokemon("Diglet","marron",30);
+const Snorlax = new Pokemon("Snorlax","morado",80);
+const Jynx = new Pokemon("Jynx","rojo",90);
+
+Pikachu.atacar(Charmander);
+console.log(Charmander.vida);
