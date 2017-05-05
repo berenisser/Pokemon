@@ -33,10 +33,10 @@ function pelear(){
 	var seleccion1 = new Pokemon(pokemonEspacio1,"cielo",90);
 	var seleccion2 = new Pokemon(pokemonEspacio2,"tierra",80);
 
-	if(seleccion1 == seleccion2){
+	if(pokemonEspacio1 == pokemonEspacio2){
 		alert("No te puedes atacar a ti mismo, escoge otros Pokemones");
 	}else{
-		texto.innerHTML = seleccion1.nombre + " atacó a " + seleccion2.nombre + " y a " + seleccion2.nombre + " le queda " + seleccion1.atacar(seleccion2) + " de vida restante."
+		texto.innerHTML = seleccion1.nombre + " atacó a " + seleccion2.nombre + " y a " + seleccion2.nombre + " le queda " + seleccion1.atacar(seleccion2) + " de vida restante." + "<img src='Pokeball.png' alt='pokeball' width='300' />";
 	}
 }
 
